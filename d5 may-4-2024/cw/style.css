@@ -1,0 +1,25 @@
+.mian{
+    color: darkcyan ;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 3px;
+    width: 720px;
+    margin: 20px auto;
+    word-spacing: 6px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: -2px 2px 2px hotpink;
+    -webkit-text-stroke: 1px yellow;
+    border: 6px solid black;
+    outline: 6px dashed black;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black, 0px 0px 10px black inset;
+}
+
+/* this is a comment */

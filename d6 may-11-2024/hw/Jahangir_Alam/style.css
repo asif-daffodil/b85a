@@ -1,0 +1,20 @@
+.jh {
+    font-size: 66px;
+    letter-spacing: 6px;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 3px darkcyan;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px black;
+    font-style: italic;
+    margin: auto;
+    width: max-content;
+    margin-top: 60px;
+    border: 6px solid turquoise;
+    outline: 6px dashed turquoise;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 18px black, 0 0 18px black inset;
+  
+}

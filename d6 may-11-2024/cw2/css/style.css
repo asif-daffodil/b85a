@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, red, white, red);
+    position: relative;
+    display: grid;
+}
+
+.main::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(red 20%, white 50%, red);
+    border-radius: 50%;
+}
+
+.main::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/pm.png');
+    background-size: cover;
+    border-radius: 50%;
+}

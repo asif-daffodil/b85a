@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="yname">
+            Your Name
+        </label>
+        <input type="text" placeholder="Your Name" id="yname" maxlength="60" minlength="3" >
+        <br><br>
+        <label for="yemail">
+            Your Email
+        </label>
+        <input type="email" placeholder="Your Email" id="yemail" required>
+        <br><br>
+        <label for="yweb">
+            Your Website
+        </label>
+        <input type="url" placeholder="Your Website" id="yweb">
+        <br><br>
+        <label for="yphone">
+            Your Phone
+        </label>
+        <input type="number" placeholder="Your Phone" id="yphone">
+        <br><br>
+        <label for="color">
+            Your Hair Color
+        </label>
+        <input type="color" id="color">
+        <br><br>
+        <label for="range">
+            Your Voice Range
+        </label>
+        <input type="range" id="range">
+        <br><br>
+        <label for="dob">
+            Date of Birth
+        </label>
+        <input type="date" id="dob">
+        <br><br>
+        <label for="tob">
+            Time of Birth
+        </label>
+        <input type="time" id="tob">
+        <br><br>
+        <label for="img">
+            Profile Picture
+        </label>
+        <input type="file" id="img">
+        <br><br>
+        <label for="passowrd">
+            Password
+        </label>
+        <input type="password" id="passowrd" placeholder="Your Password">
+        <br><br>
+        <label for="">
+            Gender
+        </label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Others
+        <br><br>
+        <label for="">Skills</label>
+        <input type="checkbox" name="skill">HTML
+        <input type="checkbox" name="skill">CSS
+        <input type="checkbox" name="skill">JS
+        <input type="checkbox" name="skill">React
+        <br><br>
+        <label for="dt">Date Time</label>
+        <input type="datetime-local" id="dt">
+        <br><br>
+        <label for="city">City</label>
+        <select name="" id="city">
+            <option value="">--Select City--</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Rangour">Rangour</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+        <label for="coomments">Your Comments</label><br>
+        <textarea name="userComment" id="coomments" cols="60" rows="5" placeholder="Your Comments"></textarea>
+        <br><br>
+        <input type="hidden" value="15" name="userid">
+        <input type="submit" value="Register">
+        <input type="reset">
+    </form>
+</body>
+</html>
