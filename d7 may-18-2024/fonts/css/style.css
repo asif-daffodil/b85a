@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'jarina';
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+
+.pera {
+    font-family: jarina;
+}

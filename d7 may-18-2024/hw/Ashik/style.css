@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    margin: auto;
+    background: linear-gradient(to top right, black, white, black);
+}
+
+.div {
+    position: relative;
+    top: 5%;
+    width: max-content;
+    outline: 15px solid black;
+    margin: auto;
+    padding: 5px 20px;
+}
+
+.text {
+    font-size: 10vw;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #1e90ff;
+    background-image: url("./nature.jpg");
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
