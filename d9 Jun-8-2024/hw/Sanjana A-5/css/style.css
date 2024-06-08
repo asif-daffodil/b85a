@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex ;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://source.unsplash.com/random/?food);
+    background-position: center;
+    background-size: cover;
+  
+   
+}
+
+
+.container{
+    width: 333px;
+    height: 253px;
+    border: 3.6px solid;
+    border-radius: 3%;
+    margin: auto;
+    
+}
+
+.green{
+    width: 100%;
+    height: 200px;
+    background: green;
+    border-bottom: 2px solid ;
+    display: flex;
+    box-shadow: 0 0 20px 0 #000;
+    
+    
+    
+}
+
+.red{
+    width: 125px;
+    height: 125px;
+    background: red;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.text{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-top: 2px solid;
+
+}
+
+
+.text::after{
+    content: "Bangladesh";
+    line-height: 50px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    font-family: cursive;      
+}
+
+
+.container:hover{
+    .green{
+        background-color: #fff;
+    }
+
+    .text::after{
+        content: "Japan";
+    }
+}
+

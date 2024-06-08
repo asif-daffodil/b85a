@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed green; */
+}
+
+body {
+    padding: 80px 0;
+    background: #f5f6f7;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    gap: 20px;
+}
+
+.container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .column .card {
+    border-radius: 8px;
+    box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card>img {
+    width: 100%;
+    border: 5px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.card .text {
+    padding: 25px;
+    color: rgb(82, 80, 80);
+}
+
+.card>img:hover {
+    opacity: 50%;
+}

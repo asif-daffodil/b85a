@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url(../iamges/digital-transformation-corporate-wallpaper.jpg) no-repeat center / cover;
+}
+
+.bg-opacity{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.germany{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 30px black;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.germany > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.germany > div:first-child{
+    background-color: rgb(0, 0, 0);
+}
+
+.germany > div:nth-child(2){
+    background-color: rgb(255, 0, 0);
+}
+
+.germany > div:nth-child(3){
+    background-color: yellow;
+}
+
+.germany::before {
+    content: 'Germany';
+    position: absolute;
+    bottom: -59px;
+    width: 100%;
+    line-height: 55px;
+    text-align: center;
+    font-family: "Lobster",cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke: 2px #000000;
+    border: 5px solid #000;
+    border-top-width: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.germany:hover div{
+    background: green;
+}
+
+.germany:hover div:first-child{
+    border-radius: 10px 10px 0 0;
+}
+
+.germany:hover::after{
+    content: '';
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.germany:hover::before{
+    content: 'Bangladesh';
+}

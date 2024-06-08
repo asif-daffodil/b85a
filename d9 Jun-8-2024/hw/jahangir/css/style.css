@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.green{
+    height: 280px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    box-shadow: inset 0 0 10px #000;
+}
+
+/* Hover Effect */
+.green:hover{
+    background-color: #fff;
+}
+
+.red{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 150px;
+    background: red;
+    border-radius: 50%;
+}
+
+.border{
+    height: 280px;
+    width: 400px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin-top: 207px;
+    margin-left:440px;
+    box-shadow: inset 0 0 10px #000;
+    
+}
+
+.text{
+    position: absolute;
+    bottom: 127px;
+    left: 50%;
+    font-family: "Poetsen One", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 3px;
+    transform: translate(-50%, 50%);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.text::after{
+    content: 'Bangladesh';
+    font-family: "Poetsen One", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 3px;
+    transform: translate(-50%, 50%);
+}
+
+.text::before{ 
+    content: 'Japan';
+    bottom: 127px;
+    left: 50%;
+    font-family: "Poetsen One", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 3px;
+    transform: translate(-50%, 50%);
+}

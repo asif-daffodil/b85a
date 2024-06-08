@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../cursor/cursor.png), auto;
+}
+
+body{
+    background-color: #2c3e50;
+    margin: 20px auto;
+}
+
+.parent{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+}
+
+.child{
+    /* background: #bdc3c7; */
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: nexa;
+    line-height: 18px;
+}
+
+.child img, p{
+    width: 100%;
+    padding: 10px;
+}
+
+.child div{
+    /* border: 1px solid rgb(141, 136, 136); */
+    box-shadow: 0 0 5px black;
+    display: grid;
+    margin: 10px;
+}

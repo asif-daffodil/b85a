@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.40)), url("https://source.unsplash.com/random?river stream");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 333px;
+    height: 253px;
+    border: 3.6px solid;
+    border-radius: 3%;
+    margin: auto;
+}
+
+.flag_green {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    border-bottom: 1.8px solid;
+    display: flex;
+    box-shadow: 0px 0px 15px black inset;
+}
+
+.circle {
+    height: 125px;
+    width: 125px;
+    background-color: red;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.text {
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid;
+    text-align: center;
+}
+
+.text::after {
+    content: "Bangladesh";
+    line-height: 50px;
+    font-family: "Kalam", cursive;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.container:hover {
+    .flag_green {
+        background-color: white;
+    }
+
+    .text::after {
+        content: "Japan";
+    }
+}

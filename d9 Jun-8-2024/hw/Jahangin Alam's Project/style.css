@@ -1,0 +1,35 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.parent {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    
+
+}
+.child{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    
+  
+}
+.child p{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
