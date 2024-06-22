@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sedgwick Ave Display", cursive;
+    /* border: 1px dashed ; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+}
+
+.card:hover>.card_content {
+    transform: rotateY(180deg);
+}
+
+.card_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 5px 2px #55555570; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: #bbb;
+}
+
+.back {
+    background: #1e90ff;
+    transform: rotateY(180deg);
+}
+
+.back>h1 {
+    color: #fff;
+}
+
+.container {
+    width: 990px;
+    height: 270px;
+    border: 6px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.container .spin {
+    position: absolute;
+    width: 120%;
+    height: 70%;
+    display: flex;
+    border: none;
+    background: linear-gradient(90deg, #63c5da, #a020f0);
+    animation: animate 1.8s linear infinite;
+    z-index: 2;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container .text {
+    width: 97%;
+    height: 90%;
+    margin: auto;
+    border: 6px solid black;
+    margin: auto;
+    background: url("../img.jpg");
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    z-index: 3;
+}
+
+.container .text h1 {
+    margin: auto;
+    color: #00f;
+    font-size: 5rem;
+    letter-spacing: 8px;
+    -webkit-text-stroke: 2px #fff;
+}

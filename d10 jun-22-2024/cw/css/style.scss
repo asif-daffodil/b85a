@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$textColor: #f33;
+@mixin textStyle ($fs: 16px, $lh: 1.5) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $fs;
+    color: $textColor;
+    line-height: $lh;
+}
+
+@mixin mprt ($w: 100px, $h: 100px, $bg: #f00) {
+    width: $w;
+    height: $h;
+    background: $bg;
+    display: grid;
+    place-items: center;
+}
+
+.eid{
+    @include textStyle(14px, 1.2);
+}
+
+.mati{
+    @include textStyle(22px, 1.5);
+}
+
+.pani {
+    @extend .mati;
+    color: #00f;
+}
+
+.main {
+    @include mprt(300px, 300px, #0f0);
+    >.pain {
+        @include mprt(200px, 200px, #f0f);
+        >.rain{
+            @include mprt(100px, 100px, #ff0);
+            >.train{
+                @include mprt(50px, 50px, #0ff);
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gian,
+.nobita,
+.shizuka, 
+.sunio{
+    position: absolute;
+}
+
+.gian{
+    top: 0;
+    left:0;
+    animation: gian 4s linear infinite;
+}
+
+.nobita{
+    bottom:0;
+    right: 0;
+    animation: nobita 4s linear infinite;
+}
+
+.shizuka{
+    top: 0;
+    right: 0;
+    animation: shizuka 4s linear infinite;
+}
+
+.sunio{
+    bottom: 0;
+    left: 0;
+    animation: sunio 4s linear infinite;
+}
+
+@keyframes gian {
+
+    0%{
+        top: 0;
+        left: 0;
+    }
+
+
+    25%{
+        top: 0;
+        left: 270px;
+    }
+
+    50%{
+        top: 270px;
+        left: 270px;
+    }
+    
+
+    75%{
+        top: 270px;
+        left: 0;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    }
+
+}
+
+@keyframes nobita {
+
+    0%{
+        bottom: 0;
+        right: 0;
+    }
+
+    25%{
+        bottom: 0;
+        right: 270px;
+    }
+
+    50%{
+        bottom: 270px;
+        right: 270px;
+    }
+
+    75%{
+        bottom: 270px;
+        right: 0;
+    }
+
+    100%{
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@keyframes shizuka {
+   
+    
+    0%{
+        top: 0;
+        right: 0;
+    }
+
+    25%{
+        top: 270px;
+        right: 0;
+    }
+
+    50%{
+        top: 270px;
+        right: 270px;
+    }
+
+
+    75%{
+        top: 0;
+        right: 270px;
+    }
+
+    100%{
+        top: 0;
+        right: 0;
+    }
+}
+
+
+@keyframes sunio {
+
+    0%{
+        bottom: 0;
+        left: 0;
+    }
+
+    25%{
+        bottom:270px ;
+        left: 0;
+    }
+
+    50%{
+        bottom: 270px;
+        left: 270px;
+    }
+
+    75%{
+        bottom:0;
+        left: 270px;
+    }
+
+    100%{
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+

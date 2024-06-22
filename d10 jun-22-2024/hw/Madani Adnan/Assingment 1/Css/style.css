@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-box{
+    background-color: transparent;
+    width: 330px;
+    height: 220px;
+    border: 1px solid #f1f1f1;;
+    margin-bottom: 30px;
+    perspective: 1000px;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    background-color: #ff6600;
+    color: black;
+    font-family: "Pacifico", cursive;
+    font-variant: small-caps;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.back {
+    background-color: #1b1464;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Pacifico", cursive;
+    font-variant: small-caps;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.bd{
+    width: max-content;
+    border: 3px solid black;
+    font-family: "Caveat", cursive;
+    font-size: 120px;
+    padding: 25px 50px 25px 45px;
+    letter-spacing: 0.9vw;
+    font-variant: small-caps;
+    font-weight: bolder;
+    -webkit-text-stroke: 3px black;
+    background: linear-gradient(20deg, #1b1464 0%, #ff6600 51%, rgba(27,20,100,1) 100%);
+    color: transparent;
+    background-clip: text;
+    position: relative;
+    overflow: hidden;
+}
+    
+.bd::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 97.3%;
+    height: 89.5%;
+    background: url(../Img/pattern.jpg);
+    z-index: -1;
+    border: 3px solid black;
+}
+        
+
+.bd::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -70%;
+    width: 120%;
+    height: 50%;
+    background: linear-gradient( rgba(27,20,100,0.8), rgba(255,102,0,0.9));
+    z-index: -2;
+    animation: after 2s infinite linear;
+}
+
+
+@keyframes after{
+    0% { transform: translate(-50%, -50%) rotate(0deg);}
+    100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
