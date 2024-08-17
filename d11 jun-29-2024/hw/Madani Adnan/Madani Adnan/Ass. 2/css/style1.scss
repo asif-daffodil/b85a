@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+// font-family: "Acme", sans-serif;
+
+.pain{
+    position: relative;
+    z-index: 0;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background: #ffd902;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    padding: 20px;
+    >div{
+        background: #fff;
+        height: 350px;
+    }
+    >.flipBox {
+            position: relative;
+           >.front, >.back{
+            background-image: url("../images/akash.jpg");
+            background-size: cover;
+            position: absolute;
+            background-position: center;
+            box-shadow: 0 0 10px black;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+            transition: 0.5s;
+           }
+           >.back{
+            background-image: url("../images/alom.jpg");
+            transform: rotateY(180deg);
+           }
+           &:hover{
+            >.front{
+                transform: rotateY(180deg);
+            }
+            >.back{
+                transform: rotateY(0deg);
+            }
+           }
+        }
+    >.ticker{
+        position: relative;
+        background: url("../images/ashraf.jpg") no-repeat center /cover;
+        perspective: 1000px;
+        box-shadow: 0 0 10px black;
+        &::before{
+            content: "Paid";
+            font-family: "Acme", sans-serif;
+            font-size: large;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgb(177, 39, 20);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(30%, -45%);
+            z-index: 10;
+        }
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url("../images/ashraf\ 2.jpg") no-repeat center /cover;
+            perspective: 1000;
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+            transform-origin: left;
+            transition: 0.5s;
+            backface-visibility: hidden;
+        }
+        &:hover{
+            &::after{
+                transform: rotateY(0deg);
+            }
+        }
+    }
+    >.aa{
+        background: url("../images/akash.jpg") no-repeat center /cover;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 10px black;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            right: 100%;
+            width: 100%;
+            height: 100%;
+            background: url("../images/ashraf.jpg") no-repeat center /cover;
+            transition: 0.5s;
+        }
+        &:hover{
+            &::after{
+                top: 0%;
+                right: 0%;
+            }
+        }
+    }
+}

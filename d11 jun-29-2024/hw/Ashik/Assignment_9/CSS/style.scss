@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$cardheight: 300px;
+$transition: all 0.5s ease;
+
+@mixin imageposition {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    @include flexcenter();
+}
+
+.parent {
+    width: 50%;
+    background: #aaa;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+
+    >.flipcard {
+        height: $cardheight;
+        width: 100%;
+
+        .card_content {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background: lightblue;
+            transition: $transition;
+            transform-style: preserve-3d;
+
+            .front,
+            .back {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                backface-visibility: hidden;
+
+                img {
+                    @include imageposition();
+                }
+            }
+
+            .front {
+                background: green;
+            }
+
+            .back {
+                background: red;
+                transform: rotateY(-180deg);
+            }
+        }
+
+        &:hover>.card_content {
+            transform: rotateY(180deg);
+        }
+    }
+
+    >.sideflip {
+        width: 100%;
+        height: $cardheight;
+        position: relative;
+
+        .top,
+        .bottom {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            img {
+                @include imageposition();
+            }
+        }
+
+        .top {
+            z-index: 2;
+            transform-origin: left;
+            transform: rotateY(90deg);
+            transition: $transition;
+            transition-delay: 0.1s;
+            clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%, 0% 0%);
+        }
+
+        .bottom {
+            z-index: 1;
+        }
+
+        &:hover {
+            .top {
+                transform: rotateY(0);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+            }
+        }
+
+        &::before {
+            content: "SOLD";
+            position: absolute;
+            z-index: 3;
+            width: 50px;
+            height: 50px;
+            background: #f00;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -6%;
+            left: 90%;
+        }
+    }
+
+    >.overlay {
+        height: $cardheight;
+        width: 100%;
+        position: relative;
+
+        .main,
+        .layer {
+            position: absolute;
+
+            img {
+                @include imageposition();
+            }
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            background: lightcoral;
+        }
+
+        .layer {
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 0;
+            background: lightblue;
+            transition: $transition;
+        }
+
+        &:hover {
+            .layer {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

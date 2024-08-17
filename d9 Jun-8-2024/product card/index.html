@@ -69,5 +69,37 @@
             </div>
         </div>
     </div>
+    <!-- link jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            // Disable right-click
+            $(document).bind("contextmenu", function(e){
+                return false;
+            });
+            
+            // Disable specific key combinations
+            $(document).keydown(function(event) {
+                // Prevent F12
+                if (event.keyCode == 123) { 
+                    return false;
+                }
+                // Prevent Ctrl+Shift+I
+                else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {        
+                    return false;
+                }
+                // Prevent Ctrl+U
+                else if (event.ctrlKey && event.keyCode == 85) {        
+                    return false;
+                }
+                // Prevent Ctrl+Shift+J
+                else if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {        
+                    return false;
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myMsg" onmouseover='textMouseOver()'></div>
+    <button onclick='document.getElementById("myMsg").innerHTML = "Ha ha ha"' >Change</button>
+    <br><br>
+    <button onclick='lightOn()'>On</button>
+    <img src="./pic_bulboff.gif" alt="" id="lightImg">
+    <button onclick='lightOff()'>Off</button>
+    <br>
+    <script>
+        let msg = "Hello World!";
+        msg = "Hello JavaScript!";
+        document.getElementById("myMsg").innerHTML = msg;
+        if (5 !== "5") {
+           console.log("Hello JavaScript!"); 
+        }else{
+            console.log("Hello World!");
+        }
+        /**
+            * 1. string
+            * 2. number
+            * 3. boolean
+            * 4. object
+            * 5. undefined
+            * 6. null
+        */
+        function lightOn() {
+            document.getElementById("lightImg").src = "./pic_bulbon.gif";
+        }
+        function lightOff() {
+            document.getElementById("lightImg").src = "./pic_bulboff.gif";
+        }
+        function textMouseOver() {
+            document.getElementById("myMsg").innerHTML = "Hello JavaScript!"
+        }
+        document.write(typeof 5 + "<br>");
+
+        function myFunction(msg) {
+            document.write(msg);
+        }
+        myFunction("Hello JavaScript! <br>");
+        myFunction("Hello JS! <br>");
+    </script>
+</body>
+</html>

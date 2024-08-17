@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- google fonts roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <!-- google fonts inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- google fonts Manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">    
+<body>
+    
+    <section class="navbar-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="d-none d-md-block text-decoration-none navbar-brand" style="font-size: 22px;" href="">Abacus Convention Center</a>
+                            <a class="d-block d-md-none text-decoration-none navbar-brand" style="font-size: 14px;" href="">Abacus Convention <br> Center</a>
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span>
+                                    <img src="./img/menu-2 1.png" alt="">
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">AboutUs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item p-0">
+                                        <a class="nav-link" href="#">Subscribe</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="waddind-slid">
+        <div class="container-fluid">
+            <div class="row mb-5 pb-4"> 
+                <div class="col-md-12 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators m-0">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="w-100 wedding-img"></div>
+                                <div class="carousel-caption d-md-block">
+                                    <span class="d-block d-lg-none mb-3" style="font-family: Poppins; line-height: normal; font-size: 24px; ">
+                                        The perfect venue for your <br class="">
+                                        next event
+                                    </span>
+                                    <span class="d-none d-lg-block" style="font-family: Poppins; line-height: 120.5%; font-size: 48px;">
+                                        The perfect venue for your <br class="">
+                                        next event
+                                    </span>
+                                    <p class="d-block d-lg-none main_pic_para mb-2">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit </p>
+                                    <p class="d-none d-lg-block main_pic_para mb-3">Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit officia consequat duis enim velit </p>
+                                    <button class="btn btn-coutom">
+                                        <h1 class=" m-0 p-1">Book Now</h1>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev mb-5 pb-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next mb-5 pb-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- big screen  -->
+        <div class="container-fluid position-relative d-none d-lg-block">
+            <div class="gift_ad position-absolute end-0">
+                <div></div>
+                <i><img src="./img/Vector.png" alt=""></i>
+                <h6 class="m-0">20% off on next booking</h6>
+            </div>
+        </div>
+        <!-- small screen  -->
+        <div class="container d-block d-lg-none">
+            <div class="position-relative col-12 d-flex justify-content-center">
+                <div class="gift_ad position-absolute">
+                    <i class="fa-solid fa-xmark coustom_xmark p-1 opacity-75"></i>
+                    <div></div>
+                    <i><img src="./img/Vector.png" alt=""></i>
+                    <h6 class="m-0">20% off on next booking</h6>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-5 pb-2">
+                <!-- big screen  -->
+                <div class="col-md-6 d-none d-lg-block">
+                    <img src="./img/unsplash_NSVJAAXOYHs.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 m-auto d-none d-lg-block gift_div">
+                    <h2 style="color: #0A0826; font-family: Poppins; font-size: 38px; font-weight: 700; line-height: 60px;">Every moment is Precious</h2>
+                    <p style="color: #6C6C6C; font-family: Poppins; font-size: 16px; font-weight: 700; line-height: 28px;">Amet minim mollit non deserunt ullamco est sit aliqua dolor <br class="d-none d-xl-block"> do amet sint. Velit officia consequat duis enim velit mollit. <br class="d-none d-xl-block"> Exercitation veniam consequat sunt nostrud amet.</p>
+                    <div>
+                        <button type="button" class="btn explore_btn btn-primary rounded-0" style="padding: 10px 24px;">
+                            <a href="" class="d-flex text-decoration-none">
+                                <h6 class="m-0" style="font-size: 16px; font-family: poppins; color: #fff; font-weight: 700;">
+                                    Explore our album
+                                    <i class="fa-solid fa-arrow-right ps-2"></i>
+                                </h6>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <!-- small screen  -->
+                <div class="col-md-6 d-block d-lg-none m-auto" style="width: 350px;">
+                    <h2 style="color: #0A0826; font-family: Poppins; font-size: 19px; font-weight: 700;">Every moment is Precious</h2>
+                    <div >
+                        <p style="color: #6C6C6C; font-family: Poppins; font-size: 15px; font-weight: 700; line-height: 28px;" class="text-start ">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit mollit. <br> Exercitation veniam consequat sunt <br> nostrud amet.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-block d-lg-none m-auto text-center">
+                    <img src="./img/unsplash_NSVJAAXOYHs.jpg" alt="" class="img-fluid mb-3" style="width: 328px;">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn explore_btn btn-primary rounded-0" style="padding: 10px 24px;">
+                            <a href="" class="d-flex text-decoration-none">
+                                <h6 class="m-0" style="font-size: 16px; font-family: poppins; color: #fff; font-weight: 700;">
+                                    Explore our album
+                                    <i class="fa-solid fa-arrow-right ps-2"></i>
+                                </h6>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Our_Package">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5 pb-0 mb-md-5 pb-md-5">
+                    <span class="d-none d-md-block" style="font-family: Poppins; color: #0A0826; font-weight: 600; font-size: 38px;">Our Package</span>
+                    <span class="d-block d-md-none" style="font-family: Poppins; color: #0A0826; font-weight: 600; font-size: 19px;">Our Package</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="container-fluid mb-3 pb-0 mb-md-5">
+            <div class="row gap-4 justify-content-center">
+                <div class="col-md-3 package_box">
+                    <div>
+                        <h1>$300</h1>
+                        <h3>Business fair</h3>
+                        <p>For most businesses event <br>
+                            like book fair, craft fair.</p>
+                        <div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >limited space access</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Secuirty facility</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Event support</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Decoration design</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Per day bill</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn rounded-pill">Choose plan</button>
+                    </div>
+                </div>
+                <div class="col-md-3 package_box">
+                    <div>
+                        <h1>$500</h1>
+                        <h3>Wedding basic</h3>
+                        <p>For weddings with basic plan <br>
+                            and limited item</p>
+                        <div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Full space access</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Food arrangement</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Management support</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Decoration design</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Billed as shift</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn rounded-pill" type="submit">Choose plan</button>
+                    </div>
+                </div>
+                <div class="col-md-3 package_box position-relative">
+                    <div>
+                        <div class="position-absolute hot rounded-pill">Hot</div>
+                        <h1>$800</h1>
+                        <h3>Wedding plus</h3>
+                        <p>For most weddings with <br> premium plans</p>
+                        <div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Full space access</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Dedicated team</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Buffet food</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >premium Decoration</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >pay as plan</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn rounded-pill" type="submit">Choose plan</button>
+                    </div>
+                </div>
+                <div class="col-md-3 package_box">
+                    <div>
+                        <h1>$1200</h1>
+                        <h3>Corporate event</h3>
+                        <p>For most corporate business <br>
+                            events</p>
+                        <div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Full space access</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Dedicated team</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >Buffet food</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >premium Decoration</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none">
+                                        <div></div>
+                                        <h6 >pay as plan</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn rounded-pill" type="submit">Choose plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Happy_Clients_says">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5 pb-0 mb-md-5 pb-md-5">
+                    <span class="d-none d-md-block" style="font-family: Poppins; color: #0A0826; font-weight: 600; font-size: 38px;">Happy Clients says</span>
+                    <span class="d-block d-md-none" style="font-family: Poppins; color: #0A0826; font-weight: 600; font-size: 19px;">Happy Clients says</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients_bio_all">
+        <div class="container-fluid mb-5 pb-0 mb-md-5 pb-md-5">
+            <div class="row gap-4 justify-content-center">
+                <div class="col-md-3 text-center clients_bio">
+                    <div>
+                        <p>Slate helps you see how <br>
+                            many more days you need <br>
+                            to work to reach your financial <br>
+                            goal for the month and year.</p>
+                        <img class="mb-3" src="./img/1.png" alt="">
+                        <h5 class="m-0 p-0">Regina Miles</h5>
+                        <h6 class="m-0 p-0">Banker</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center clients_bio">
+                    <div>
+                        <p>Slate helps you see how <br>
+                            many more days you need <br>
+                            to work to reach your financial <br>
+                            goal for the month and year.</p>
+                        <img class="mb-3" src="./img/2.png" alt="">
+                        <h5 class="m-0 p-0">Regina Miles</h5>
+                        <h6 class="m-0 p-0">Banker</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center clients_bio">
+                    <div>
+                        <p>Slate helps you see how <br>
+                            many more days you need <br>
+                            to work to reach your financial <br>
+                            goal for the month and year.</p>
+                        <img class="mb-3" src="./img/3.png" alt="">
+                        <h5 class="m-0 p-0">Regina Miles</h5>
+                        <h6 class="m-0 p-0">Banker</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="Frequently_Asked_Questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5 pb-0 mb-md-5 pb-md-5">
+                    <span class="d-none d-md-block" style="font-family: Poppins; color: #0A0826; font-weight: 600; font-size: 38px;">Frequently Asked Questions</span>
+                    <span class="d-block d-md-none" style="font-family: Poppins; color: #0A0826; font-weight: 600; font-size: 19px;">Frequently Asked Questions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Questions">
+        <div class="container mb-5 pb-0 mb-md-5 pb-md-5">
+            <div class="row justify-content-xxl-between justify-content-center">
+                <!-- big screen  -->
+                <div class="col-md-6 d-none d-xl-block">
+                    <div class="row questions_details container-fluid">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 20px;">
+                                        What's the difference between event design and <br class="d-none d-xxl-block">
+                                        event planning? 
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 16px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row questions_details container-fluid">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 20px;">
+                                        How early do we need to start planning an event
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 16px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row questions_details container-fluid">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 20px;">
+                                        What is your refund and cancellation policy?
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 16px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row questions_details container-fluid mb-0">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 20px;">
+                                        How do you keep budgets on track?
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 16px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-xl-block align-content-center p-0" style="width: 546px;">
+                    <img src="./img/item pic.png" class="img-fluid" alt="">
+                </div>
+                <!-- small screen  -->
+                <div class="col-md-6 d-block d-xl-none text-center mb-2 align-content-center">
+                    <img src="./img/party.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 d-block d-xl-none d-flex justify-content-between flex-column questions_details border-0 m-auto" style="width: 367px;">
+                    <div class="row questions_details container-fluid">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 16px;">
+                                        What's the difference between event design and
+                                        event planning? 
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 14px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row questions_details container-fluid">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 16px;">
+                                        How early do we need to start planning an event
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 14px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row questions_details container-fluid">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 16px;">
+                                        What is your refund and cancellation policy?
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 14px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row questions_details container-fluid">
+                        <div>
+                            <span>
+                                <div>
+                                    <h6 class="m-0" style="font-size: 16px;">
+                                        How do you keep budgets on track?
+                                    </h6>
+                                </div>
+                                <div>
+                                    <button class="arrow"></button>
+                                </div>
+                            </span>
+                            <p class="m-0 mt-2" style="font-size: 14px;">
+                                Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- big screen -->
+        <div class="container-fluid bg-black w-100 align-content-center d-none d-md-block" style="height: 280px;">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 align-content-center" style="font-family: Manrope; color: var(--Text-Gray-300, #D9DBE1); font-size: 14px; font-weight: 400; line-height: 24px;">© 2020 bike. All rights reserved</div>
+                    <div class="col-md-6 w-auto">
+                        <div class="d-grid gap-3">
+                            <h5 class="m-0" style="color: var(--Text-Gray-300, #D9DBE1); font-family: Manrope; font-size: 18px; font-weight: 500; font-weight: 500;">Get the App</h5>
+                            <a href="">
+                                <img src="./img/Google Play Badge.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="./img/App Store Badge.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- small screen  -->
+        <div class="container-fluid bg-black w-100 align-content-center d-block d-md-none" style="height: 340px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 d-flex flex-column align-items-center">
+                        <div class="row mb-5">
+                            <div class="d-grid gap-3 p-0">
+                                <h5 class="m-0" style="color: var(--Text-Gray-300, #D9DBE1); font-family: Manrope; font-size: 18px; font-weight: 500; font-weight: 500;">Get the App</h5>
+                                <a href="">
+                                    <img src="./img/Google Play Badge.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./img/App Store Badge.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" style="font-family: Manrope; color: var(--Text-Gray-300, #D9DBE1); font-size: 14px; font-weight: 400; line-height: 24px;">© 2020 bike. All rights reserved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

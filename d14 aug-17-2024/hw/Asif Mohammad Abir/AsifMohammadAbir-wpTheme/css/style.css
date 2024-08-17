@@ -1,0 +1,33 @@
+.topRigthNav {
+  position: relative;
+}
+
+.topRigthNav::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  background: #8cc643;
+  top: 0;
+  left: -80px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.topRigthNav .navbar-nav > li:not(.topRigthNav .navbar-nav > li:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.mainNav > li:not(.mainNav > li:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #9e5bba;
+}
+
+.nav-tabs .nav-link {
+  background: #9e5bba;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

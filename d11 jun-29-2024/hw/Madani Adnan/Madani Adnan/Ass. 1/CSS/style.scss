@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+// font-family: "Josefin Sans", sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+nav{
+    width: 100%;
+    background: #042940;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    .logo{
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        font-variant: small-caps;
+        background: linear-gradient(to top right,#DBF227, #005C53, #DBF227  );
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        letter-spacing: 3px;
+    }
+    >ul{
+        list-style: none;
+        display: flex;
+        width: 45%; 
+        li{
+            text-align: center;
+            position: relative;
+            width: 100%;
+            a{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-family: "Josefin Sans", sans-serif;
+                line-height: 55px;
+                transition: 0.5s;
+            }
+            &::before {
+                content: "";
+                width: 0%;
+                height: 6px;
+                background: #DBF227;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                transition: 0.5s;
+            }
+            &:hover{
+                background: #005C53;
+                &::before{
+                    width: 100%;
+                }
+                a{
+                    font-size: 20px;
+                }
+                ul{
+                    display: block;
+                }
+                >.submenu {
+                    visibility: visible;
+                    transform: translate(-50%, 0%);
+                }
+                >.megamenu {
+                    visibility: visible;
+                    transform: translateY(0px);
+                    transition: 0.5s;
+                }
+            }
+
+            >.submenu {
+                list-style: none;
+                background: #042940;
+                position: absolute;
+                width: 100%;
+                left: 50%;
+                transition: 0.3s;
+                transform: translate(-50%, 10%);    
+                visibility: hidden;
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 6px;
+                    background: rgba(241, 241, 241, 0.6);
+                    position: absolute;
+                    left: 0;
+                    top: -6px;
+                }
+
+                li {
+                    a {
+                        line-height: 50px;
+                    }
+
+                    >.subsubmenu {
+                        width: 100%;
+                        background: #042940;
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        list-style: none;
+                        transition: 0.3s;
+                        visibility: hidden;
+                        transform: translateX(10%);
+                    }
+
+                    &:hover {
+                        >.subsubmenu {
+                            visibility: visible;
+                            transform: translateX(0%);
+                        }
+                    }
+                }
+            }
+
+            >.megamenu {
+                width: 100vw;
+                height: max-content;
+                overflow: hidden;
+                position: fixed;
+                left: 0;
+                display: flex;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 20px;
+                padding: 20px;
+                background: #f1f1f1;
+                border-top: 2px solid #fff;
+                visibility: hidden;
+                transform: translateY(20px);
+                transition: 0.3s;
+
+                >img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+            }
+            
+        }
+    }
+}

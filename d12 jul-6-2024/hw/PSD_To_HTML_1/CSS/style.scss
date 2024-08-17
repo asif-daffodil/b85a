@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$themecolor : #0085CF;
+
+@mixin flexcenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button() {
+    height: 32px;
+    width: 112px;
+    background: $themecolor;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+@mixin image() {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+body {
+    @include flexcenter();
+}
+
+.main {
+    width: 850px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.7);
+    margin: 50px;
+    @include flexcenter();
+    flex-direction: column;
+
+    >.firstheading {
+        color: $themecolor;
+        font-size: 1.8rem;
+    }
+
+    >.secondheading {
+        color: $themecolor;
+        margin-top: 42px;
+    }
+
+    >ul {
+        list-style: none;
+        display: flex;
+        padding: 20px;
+
+        >li {
+            margin: 0 10px;
+
+            >a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background: $themecolor;
+}
+
+.mainbanner {
+    width: 90%;
+    margin: 35px 0 47px;
+    padding: 72px 100px;
+    background-image: url("../images/General\ Announcements-02.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .intro {
+        width: 100%;
+        @include flexcenter();
+        flex-direction: column;
+        gap: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+
+        >h1 {
+            margin: 30px 20px 0;
+            color: $themecolor;
+        }
+
+        >p {
+            padding: 0 28px 30px;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.upcoming {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+    margin-top: 32px;
+
+    >.cards {
+        >div {
+            height: 215px;
+            width: 215px;
+
+            >img {
+                @include image();
+            }
+        }
+
+        >p {
+            margin-top: 22px;
+            margin-bottom: 13px;
+        }
+
+        >button {
+            @include button();
+        }
+    }
+}
+
+.reminder {
+    width: 90%;
+    padding: 18px 26px;
+    margin-top: 45px;
+    background: $themecolor;
+    border-radius: 15px;
+    color: #fff;
+
+    >h2 {
+        padding-bottom: 13px;
+    }
+}
+
+.updates {
+    width: 90%;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    >.cards {
+        display: flex;
+        justify-content: space-between;
+
+        >.img {
+            width: 296px;
+            height: 197px;
+
+            >img {
+                @include image();
+            }
+        }
+
+        >.info {
+            width: 100%;
+            height: 100%;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+
+            >button {
+                @include button();
+            }
+        }
+    }
+}
+
+.contacts {
+    width: 100%;
+    background: $themecolor;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 18px;
+
+    >ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+
+        >li {
+            >a {
+                font-size: 1.6rem;
+                color: #000;
+            }
+        }
+    }
+}

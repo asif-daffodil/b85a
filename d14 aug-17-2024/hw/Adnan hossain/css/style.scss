@@ -1,0 +1,311 @@
+// font-family: "Poppins"
+// font-family: "Roboto"
+
+
+
+.navbar-brand{
+    color: #3E3E3E;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+.nav-link{
+    color: #3E3E3E;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-item{
+    padding-right: 20px;
+}
+
+.wedding-img{
+    height: 584px;
+    object-fit: cover;
+    border-radius: 0px 0px 5px 5px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 21.92%, rgba(0, 0, 0, 0.42) 160.04%, rgba(0, 0, 0, 0.12) 160.06%), url(../img/wadding.jpg) lightgray 50% / cover no-repeat;
+}
+
+
+
+.btn-coutom{
+    background: #FFF;
+    width: 168px;
+    border-radius: 5px;
+
+    >h1{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        color: #3F87F5;
+        justify-content: center;
+    }
+
+    &:hover{
+        background: white;
+    }
+}
+
+.main_pic_para{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.gift_ad{
+    width: 263px;
+    height: 42px;
+    border-radius: 1px;
+    background: #FFF;
+    box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    top: -23px;
+
+    .coustom_xmark{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+
+    >div{
+        width: 8px;
+        height: 42px;
+        background: #3F87F5;
+        border-radius: 1px;
+        position: absolute;
+        left: 0;
+    }
+
+    >h6{
+        color: #505050;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing : 0.2px;
+        line-height: 24px
+    }
+
+}
+
+.package_box{
+    width: 292px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 26px;
+    transition: 0.5s;
+
+    >div{
+
+        .hot{
+            padding: 6px 11px;
+            text-align: center;
+            background: #FF4E4E;
+            top: -13.5px;
+            right: 23px;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 0.833px;
+        }
+
+        >h1{
+            color: #231D4F;
+            font-family: Roboto;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+            margin-bottom: 20px;
+        }
+    
+        >h3{
+            color: #231D4F;
+            font-family: Roboto;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+    
+        >p{
+            color: #848199;
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    
+        >div{
+            >ul{
+                >li{
+                    margin-bottom: 8px;
+                    >a{
+                        display: flex;
+                        gap: 8px;
+                        >div{
+                            width: 20px;
+                            height: 20px;
+                            background: url(../img/check-circle-1.png);
+                        }
+    
+                        >h6{
+                            color: #848199;
+                            font-family: Poppins;
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    
+        >button{
+            width: 232px;
+            height: 45px;
+            background: rgba(244, 150, 209, 0.1);
+            color: #3F87F5;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+
+    &:hover{
+        background: #3F87F5;
+        box-shadow: 0px 42px 34px 0px rgba(63, 135, 245, 0.25);
+        transform: translateY(-40px);
+        >div{
+            >h1{
+                color: #fff;
+            }
+            
+            >h3{
+                color: #fff;
+            }
+
+            >p{
+                color: #fff;
+            }
+
+            >div{
+                >ul{
+                    >li{
+                        >a{
+                            >div{
+                                background: url(../img/check-circle-1\ \(1\).png);
+                                
+                            }
+                            >h6{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            >button{
+                background: #fff;
+                color: #3F87F5;
+            }
+        }
+    }
+}
+
+.clients_bio{
+    width: 360px;
+    padding: 20px 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.13);
+    >div{
+        >p{
+            color: #6C6C6C;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.2px;
+        }
+        >h5{
+            color: #0C1920;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+        >h6{
+            color: #747474;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+    }
+}
+
+.questions_details{
+    padding: 20px 24px;
+    gap: 8px;
+    border-radius: 5px;
+    border: 1px solid #D5E5FB;
+    background: #FFF;
+    margin-bottom: 13px;
+
+    >div{
+        margin: auto;
+        >span{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div{
+                >h6{
+                    color: #383838;
+                    font-family: Inter;
+                    font-weight: 500;
+                    line-height: 28px;
+                    font-variant-numeric: lining-nums tabular-nums;
+                }
+                >.arrow{
+                    width: 36px;
+                    height: 36px;
+                    border: none;
+                    background: url(../img/down\ arr.png);
+                }
+            }
+        }
+
+        >p{
+            color: #7E848C;
+            font-family: Inter;
+            font-weight: 400;
+            line-height: 28px;
+            display: none;
+        }
+    }
+
+    &:hover{
+        >div{
+            >span{
+                >div{
+                    >.arrow{
+                        background: url(../img/up\ arr.png);
+                    }
+                }
+            }
+            >p{
+                display: block;
+            }
+        }
+    }
+}
