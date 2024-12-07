@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="heading1">Hello Univerce!</h1>
+
+    <script>
+        // local storage
+
+        localStorage.setItem('name', 'Jahanngir');
+        localStorage.setItem('age', 25);
+
+        let name = localStorage.getItem('name');
+        let age = localStorage.getItem('age');
+
+        console.log(name, age);
+
+        // session storage
+
+        sessionStorage.setItem('name', 'Jahanngir');
+        sessionStorage.setItem('age', 25);
+
+        name = sessionStorage.getItem('name');
+        age = sessionStorage.getItem('age');
+
+        console.log(name, age);
+
+        // cookies
+
+        document.cookie = 'name=Jahanngir';
+        document.cookie = 'age=25';
+
+        let cookies = document.cookie.split(';');
+        console.log(cookies);
+
+        cookies.forEach(cookie => {
+            console.log(cookie);
+        });
+ 
+        // delete cookie
+        // document.cookie = 'name=; expires=' + new Date(0).toUTCString();
+    
+    </script>
+</body>
+</html>
